@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="policeTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#E8EEF8"/>
+      <stop offset="40%"  stop-color="#B8CCDD"/>
+      <stop offset="75%"  stop-color="#2A4A66"/>
+      <stop offset="100%" stop-color="#0D1A2A"/>
+    </linearGradient>
+    <linearGradient id="rimG2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#5A6A78"/>
+      <stop offset="50%"  stop-color="#8AAABB"/>
+      <stop offset="100%" stop-color="#2A3444"/>
+    </linearGradient>
+    <radialGradient id="hlGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#CCEEFF" stop-opacity="0.70"/>
+      <stop offset="100%" stop-color="#CCEEFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#2255FF" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#2255FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FF2222" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#FF2222" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- GROUND SHADOW -->
+  <ellipse cx="398" cy="292" rx="370" ry="11" fill="#000" opacity="0.40"/>
+
+  <!-- MAIN BODY -->
+  <path d="
+    M 18,264
+    C 16,250 24,226 46,205
+    C 62,190 90,178 122,172
+    L 188,165
+    C 206,162 212,158 215,153
+    L 238,108
+    C 242,104 248,102 255,102
+    L 484,106
+    C 506,107 524,120 538,138
+    C 552,155 568,161 585,165
+    L 606,150 L 619,149 L 628,163
+    C 650,172 690,190 740,206
+    L 782,208 L 782,264
+    Z
+  " fill="url(#policeTop)"/>
+
+  <!-- Body highlight edge -->
+  <path d="
+    M 46,205 C 62,190 90,178 122,172 L 188,165
+    C 206,162 212,158 215,153 L 238,108
+    C 242,104 248,102 255,102 L 484,106
+  " fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Belt crease shadow -->
+  <path d="M 54,215 Q 400,200 782,210"
+        fill="none" stroke="rgba(0,0,0,0.20)" stroke-width="1.6"/>
+
+  <!-- WHEEL ARCH OPENINGS -->
+  <ellipse cx="212" cy="222" rx="80" ry="78" fill="#070A12"/>
+  <ellipse cx="584" cy="222" rx="80" ry="78" fill="#070A12"/>
+
+  <!-- WINDOWS -->
+  <path d="M 217,154 L 240,108 L 260,102 L 302,102 L 313,154 Z"
+        fill="#335577" opacity="0.88"/>
+  <path d="M 298,105 L 309,105 L 300,153 L 288,153 Z"
+        fill="rgba(255,255,255,0.22)"/>
+  <path d="M 315,102 L 474,106 L 468,154 L 315,154 Z"
+        fill="#335577" opacity="0.88"/>
+  <path d="M 476,106 L 492,105 L 505,140 L 470,154 Z"
+        fill="#335577" opacity="0.82"/>
+  <line x1="315" y1="103" x2="313" y2="234" stroke="rgba(0,0,0,0.25)" stroke-width="2"/>
+  <line x1="474" y1="106" x2="470" y2="230" stroke="rgba(0,0,0,0.25)" stroke-width="2"/>
+
+  <!-- POLICE CHECKERBOARD STRIPE — inline rects, 16x15 cells -->
+  <!-- Blue squares row 0 (even cols, y=192) -->
+  <g fill="#0033BB" opacity="0.90">
+    <rect x="155" y="192" width="16" height="15"/><rect x="187" y="192" width="16" height="15"/>
+    <rect x="219" y="192" width="16" height="15"/><rect x="251" y="192" width="16" height="15"/>
+    <rect x="283" y="192" width="16" height="15"/><rect x="315" y="192" width="16" height="15"/>
+    <rect x="347" y="192" width="16" height="15"/><rect x="379" y="192" width="16" height="15"/>
+    <rect x="411" y="192" width="16" height="15"/><rect x="443" y="192" width="16" height="15"/>
+    <rect x="475" y="192" width="16" height="15"/><rect x="507" y="192" width="16" height="15"/>
+    <rect x="539" y="192" width="16" height="15"/><rect x="571" y="192" width="16" height="15"/>
+    <rect x="603" y="192" width="16" height="15"/>
+    <!-- Blue squares row 1 (odd cols, y=207) -->
+    <rect x="171" y="207" width="16" height="15"/><rect x="203" y="207" width="16" height="15"/>
+    <rect x="235" y="207" width="16" height="15"/><rect x="267" y="207" width="16" height="15"/>
+    <rect x="299" y="207" width="16" height="15"/><rect x="331" y="207" width="16" height="15"/>
+    <rect x="363" y="207" width="16" height="15"/><rect x="395" y="207" width="16" height="15"/>
+    <rect x="427" y="207" width="16" height="15"/><rect x="459" y="207" width="16" height="15"/>
+    <rect x="491" y="207" width="16" height="15"/><rect x="523" y="207" width="16" height="15"/>
+    <rect x="555" y="207" width="16" height="15"/><rect x="587" y="207" width="16" height="15"/>
+    <rect x="619" y="207" width="16" height="15"/>
+  </g>
+  <!-- White squares row 0 (odd cols, y=192) -->
+  <g fill="#FFFFFF" opacity="0.88">
+    <rect x="171" y="192" width="16" height="15"/><rect x="203" y="192" width="16" height="15"/>
+    <rect x="235" y="192" width="16" height="15"/><rect x="267" y="192" width="16" height="15"/>
+    <rect x="299" y="192" width="16" height="15"/><rect x="331" y="192" width="16" height="15"/>
+    <rect x="363" y="192" width="16" height="15"/><rect x="395" y="192" width="16" height="15"/>
+    <rect x="427" y="192" width="16" height="15"/><rect x="459" y="192" width="16" height="15"/>
+    <rect x="491" y="192" width="16" height="15"/><rect x="523" y="192" width="16" height="15"/>
+    <rect x="555" y="192" width="16" height="15"/><rect x="587" y="192" width="16" height="15"/>
+    <rect x="619" y="192" width="16" height="15"/>
+    <!-- White squares row 1 (even cols, y=207) -->
+    <rect x="155" y="207" width="16" height="15"/><rect x="187" y="207" width="16" height="15"/>
+    <rect x="219" y="207" width="16" height="15"/><rect x="251" y="207" width="16" height="15"/>
+    <rect x="283" y="207" width="16" height="15"/><rect x="315" y="207" width="16" height="15"/>
+    <rect x="347" y="207" width="16" height="15"/><rect x="379" y="207" width="16" height="15"/>
+    <rect x="411" y="207" width="16" height="15"/><rect x="443" y="207" width="16" height="15"/>
+    <rect x="475" y="207" width="16" height="15"/><rect x="507" y="207" width="16" height="15"/>
+    <rect x="539" y="207" width="16" height="15"/><rect x="571" y="207" width="16" height="15"/>
+    <rect x="603" y="207" width="16" height="15"/>
+  </g>
+  <line x1="155" y1="192" x2="635" y2="192" stroke="rgba(0,0,0,0.45)" stroke-width="1.5"/>
+  <line x1="155" y1="222" x2="635" y2="222" stroke="rgba(0,0,0,0.45)" stroke-width="1.5"/>
+
+  <!-- HEADLIGHT -->
+  <ellipse cx="52" cy="188" rx="50" ry="20" fill="url(#hlGlow2)"/>
+  <rect x="20" y="177" width="68" height="20" rx="4" fill="#0A0D14"/>
+  <rect x="23" y="180" width="62" height="8"  rx="2" fill="#CCEEFF" opacity="0.95"/>
+  <rect x="23" y="190" width="62" height="5"  rx="1.5" fill="#AACCFF" opacity="0.70"/>
+  <rect x="20" y="177" width="68" height="20" rx="4" fill="none"
+        stroke="rgba(100,160,220,0.25)" stroke-width="1.5"/>
+
+  <!-- TAIL LIGHT -->
+  <rect x="718" y="165" width="56" height="22" rx="3" fill="#0A0D14"/>
+  <rect x="721" y="168" width="50" height="14" rx="2" fill="#FF1744" opacity="0.95"/>
+
+  <!-- FRONT SPLITTER -->
+  <path d="M 15,264 L 145,264 L 141,273 L 13,273 Z" fill="#0A0A0A"/>
+
+  <!-- SIDE SKIRT -->
+  <rect x="60" y="252" width="682" height="10" rx="2" fill="#0E0E0E"/>
+  <line x1="62" y1="252" x2="740" y2="252"
+        stroke="rgba(100,150,220,0.16)" stroke-width="1.2"/>
+
+  <!-- SIREN BAR -->
+  <rect x="285" y="72" width="218" height="28" rx="4" fill="#0A0A0A"/>
+  <rect x="285" y="72" width="218" height="28" rx="4" fill="none"
+        stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
+  <!-- Blue light (left) -->
+  <ellipse cx="355" cy="86" rx="46" ry="16" fill="url(#blueGlow)"/>
+  <ellipse cx="355" cy="86" rx="28" ry="10" fill="#2255FF" opacity="0.92"/>
+  <ellipse cx="355" cy="86" rx="16" ry="6"  fill="#88AAFF"/>
+  <!-- Red light (right) -->
+  <ellipse cx="440" cy="86" rx="46" ry="16" fill="url(#redGlow)"/>
+  <ellipse cx="440" cy="86" rx="28" ry="10" fill="#FF2222" opacity="0.92"/>
+  <ellipse cx="440" cy="86" rx="16" ry="6"  fill="#FF8888"/>
+  <!-- Siren bar mounting flanges -->
+  <rect x="350" y="98" width="12" height="10" fill="#141414"/>
+  <rect x="432" y="98" width="12" height="10" fill="#141414"/>
+
+  <!-- FRONT WHEEL -->
+  <circle cx="212" cy="222" r="68" fill="#0C0E18"/>
+  <circle cx="212" cy="222" r="68" fill="none" stroke="#222222" stroke-width="26"/>
+  <circle cx="212" cy="222" r="44" fill="url(#rimG2)"/>
+  <line x1="212" y1="222" x2="212" y2="179" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="212" y1="222" x2="253" y2="235" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="212" y1="222" x2="238" y2="266" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="212" y1="222" x2="186" y2="266" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="212" y1="222" x2="171" y2="235" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="212" cy="222" r="25" fill="#1C2830"/>
+  <ellipse cx="232" cy="213" rx="20" ry="17" fill="#556677" opacity="0.90"/>
+  <circle cx="212" cy="222" r="12" fill="#BBCCDD"/>
+  <circle cx="212" cy="222" r="6"  fill="#8899AA"/>
+
+  <!-- REAR WHEEL -->
+  <circle cx="584" cy="222" r="68" fill="#0C0E18"/>
+  <circle cx="584" cy="222" r="68" fill="none" stroke="#222222" stroke-width="26"/>
+  <circle cx="584" cy="222" r="44" fill="url(#rimG2)"/>
+  <line x1="584" y1="222" x2="584" y2="179" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="625" y2="235" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="610" y2="266" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="558" y2="266" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="543" y2="235" stroke="#8AABB8" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="584" cy="222" r="25" fill="#1C2830"/>
+  <ellipse cx="604" cy="213" rx="20" ry="17" fill="#556677" opacity="0.90"/>
+  <circle cx="584" cy="222" r="12" fill="#BBCCDD"/>
+  <circle cx="584" cy="222" r="6"  fill="#8899AA"/>
+</svg>

@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bodyTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFF9C4"/>
+      <stop offset="18%"  stop-color="#FFD600"/>
+      <stop offset="58%"  stop-color="#FF9000"/>
+      <stop offset="100%" stop-color="#C03800"/>
+    </linearGradient>
+    <linearGradient id="rimG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#5A7288"/>
+      <stop offset="50%"  stop-color="#8ABED4"/>
+      <stop offset="100%" stop-color="#263545"/>
+    </linearGradient>
+    <radialGradient id="hlGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FFFCE8" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#FFFCE8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tlGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FF1744" stop-opacity="0.70"/>
+      <stop offset="100%" stop-color="#FF1744" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- GROUND SHADOW -->
+  <ellipse cx="398" cy="292" rx="376" ry="11" fill="#000" opacity="0.42"/>
+
+  <!-- MAIN BODY -->
+  <path d="
+    M 15,264
+    C 13,248 22,222 44,200
+    C 60,185 88,173 120,168
+    L 190,161
+    C 208,157 213,153 215,149
+    L 240,99
+    C 245,95 251,93 258,93
+    L 480,97
+    C 504,98 524,112 540,132
+    C 555,150 572,157 590,161
+    L 612,144 L 626,143 L 636,158
+    C 660,168 700,188 748,206
+    L 784,207 L 784,264
+    Z
+  " fill="url(#bodyTop)"/>
+
+  <!-- Body top-edge highlight -->
+  <path d="
+    M 44,200 C 60,185 88,173 120,168 L 190,161
+    C 208,157 213,153 215,149 L 240,99
+    C 245,95 251,93 258,93 L 480,97
+  " fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- Belt-line crease shadow -->
+  <path d="M 52,210 Q 400,196 784,208"
+        fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="1.8"/>
+
+  <!-- WHEEL ARCH OPENINGS -->
+  <ellipse cx="210" cy="222" rx="80" ry="78" fill="#070A12"/>
+  <ellipse cx="584" cy="222" rx="80" ry="78" fill="#070A12"/>
+
+  <!-- WINDOWS -->
+  <path d="M 217,150 L 242,100 L 262,94 L 305,94 L 316,150 Z"
+        fill="#0D1E2E" opacity="0.93"/>
+  <path d="M 300,97 L 311,97 L 302,149 L 290,149 Z"
+        fill="rgba(255,255,255,0.23)"/>
+  <path d="M 318,94 L 477,98 L 470,150 L 318,150 Z"
+        fill="#0D1E2E" opacity="0.93"/>
+  <path d="M 472,98 L 477,98 L 470,150 L 464,150 Z"
+        fill="rgba(255,255,255,0.12)"/>
+  <path d="M 479,98 L 496,97 L 510,134 L 472,150 Z"
+        fill="#0D1E2E" opacity="0.88"/>
+  <line x1="318" y1="95"  x2="316" y2="236" stroke="rgba(0,0,0,0.28)" stroke-width="2.2"/>
+  <line x1="477" y1="98"  x2="472" y2="232" stroke="rgba(0,0,0,0.28)" stroke-width="2.2"/>
+
+  <!-- HEADLIGHT -->
+  <ellipse cx="55" cy="185" rx="56" ry="22" fill="url(#hlGlow)"/>
+  <rect x="20" y="174" width="72" height="22" rx="4" fill="#0B0D18"/>
+  <rect x="23" y="177" width="66" height="9"  rx="2" fill="#FDFCE8" opacity="0.97"/>
+  <rect x="23" y="188" width="66" height="6"  rx="1.5" fill="#FFAA00" opacity="0.88"/>
+  <rect x="20" y="174" width="72" height="22" rx="4" fill="none"
+        stroke="rgba(255,200,0,0.30)" stroke-width="1.5"/>
+
+  <!-- TAIL LIGHT -->
+  <ellipse cx="750" cy="174" rx="42" ry="18" fill="url(#tlGlow)"/>
+  <rect x="717" y="163" width="58" height="22" rx="3" fill="#0B0D18"/>
+  <rect x="720" y="166" width="52" height="14" rx="2" fill="#FF1744" opacity="0.97"/>
+  <rect x="730" y="169" width="32" height="8"  rx="1" fill="#FF6688" opacity="0.60"/>
+
+  <!-- FRONT SPLITTER -->
+  <path d="M 12,264 L 162,264 L 158,274 L 10,274 Z" fill="#0A0A0A"/>
+  <line x1="32"  y1="264" x2="30"  y2="274" stroke="rgba(255,255,255,0.07)" stroke-width="1.2"/>
+  <line x1="52"  y1="264" x2="50"  y2="274" stroke="rgba(255,255,255,0.07)" stroke-width="1.2"/>
+  <line x1="72"  y1="264" x2="70"  y2="274" stroke="rgba(255,255,255,0.07)" stroke-width="1.2"/>
+  <line x1="92"  y1="264" x2="90"  y2="274" stroke="rgba(255,255,255,0.07)" stroke-width="1.2"/>
+  <line x1="112" y1="264" x2="110" y2="274" stroke="rgba(255,255,255,0.07)" stroke-width="1.2"/>
+  <line x1="132" y1="264" x2="130" y2="274" stroke="rgba(255,255,255,0.07)" stroke-width="1.2"/>
+  <line x1="152" y1="264" x2="150" y2="274" stroke="rgba(255,255,255,0.07)" stroke-width="1.2"/>
+
+  <!-- SIDE SKIRT -->
+  <rect x="56" y="252" width="690" height="10" rx="2" fill="#101010"/>
+  <line x1="58" y1="252" x2="744" y2="252"
+        stroke="rgba(255,200,0,0.18)" stroke-width="1.2"/>
+
+  <!-- CHECKERBOARD DOOR STRIPE — inline rects, no pattern element -->
+  <!-- Black squares -->
+  <g fill="#000" opacity="0.82">
+    <rect x="320" y="192" width="8" height="8"/><rect x="336" y="192" width="8" height="8"/>
+    <rect x="352" y="192" width="8" height="8"/><rect x="368" y="192" width="8" height="8"/>
+    <rect x="384" y="192" width="8" height="8"/><rect x="400" y="192" width="8" height="8"/>
+    <rect x="416" y="192" width="8" height="8"/><rect x="432" y="192" width="8" height="8"/>
+    <rect x="448" y="192" width="8" height="8"/><rect x="464" y="192" width="8" height="8"/>
+    <rect x="328" y="200" width="8" height="8"/><rect x="344" y="200" width="8" height="8"/>
+    <rect x="360" y="200" width="8" height="8"/><rect x="376" y="200" width="8" height="8"/>
+    <rect x="392" y="200" width="8" height="8"/><rect x="408" y="200" width="8" height="8"/>
+    <rect x="424" y="200" width="8" height="8"/><rect x="440" y="200" width="8" height="8"/>
+    <rect x="456" y="200" width="8" height="8"/><rect x="472" y="200" width="4" height="8"/>
+    <rect x="320" y="208" width="8" height="8"/><rect x="336" y="208" width="8" height="8"/>
+    <rect x="352" y="208" width="8" height="8"/><rect x="368" y="208" width="8" height="8"/>
+    <rect x="384" y="208" width="8" height="8"/><rect x="400" y="208" width="8" height="8"/>
+    <rect x="416" y="208" width="8" height="8"/><rect x="432" y="208" width="8" height="8"/>
+    <rect x="448" y="208" width="8" height="8"/><rect x="464" y="208" width="8" height="8"/>
+    <rect x="328" y="216" width="8" height="8"/><rect x="344" y="216" width="8" height="8"/>
+    <rect x="360" y="216" width="8" height="8"/><rect x="376" y="216" width="8" height="8"/>
+    <rect x="392" y="216" width="8" height="8"/><rect x="408" y="216" width="8" height="8"/>
+    <rect x="424" y="216" width="8" height="8"/><rect x="440" y="216" width="8" height="8"/>
+    <rect x="456" y="216" width="8" height="8"/><rect x="472" y="216" width="4" height="8"/>
+  </g>
+  <!-- White squares -->
+  <g fill="#fff" opacity="0.75">
+    <rect x="328" y="192" width="8" height="8"/><rect x="344" y="192" width="8" height="8"/>
+    <rect x="360" y="192" width="8" height="8"/><rect x="376" y="192" width="8" height="8"/>
+    <rect x="392" y="192" width="8" height="8"/><rect x="408" y="192" width="8" height="8"/>
+    <rect x="424" y="192" width="8" height="8"/><rect x="440" y="192" width="8" height="8"/>
+    <rect x="456" y="192" width="8" height="8"/><rect x="472" y="192" width="4" height="8"/>
+    <rect x="320" y="200" width="8" height="8"/><rect x="336" y="200" width="8" height="8"/>
+    <rect x="352" y="200" width="8" height="8"/><rect x="368" y="200" width="8" height="8"/>
+    <rect x="384" y="200" width="8" height="8"/><rect x="400" y="200" width="8" height="8"/>
+    <rect x="416" y="200" width="8" height="8"/><rect x="432" y="200" width="8" height="8"/>
+    <rect x="448" y="200" width="8" height="8"/><rect x="464" y="200" width="8" height="8"/>
+    <rect x="328" y="208" width="8" height="8"/><rect x="344" y="208" width="8" height="8"/>
+    <rect x="360" y="208" width="8" height="8"/><rect x="376" y="208" width="8" height="8"/>
+    <rect x="392" y="208" width="8" height="8"/><rect x="408" y="208" width="8" height="8"/>
+    <rect x="424" y="208" width="8" height="8"/><rect x="440" y="208" width="8" height="8"/>
+    <rect x="456" y="208" width="8" height="8"/><rect x="472" y="208" width="4" height="8"/>
+    <rect x="320" y="216" width="8" height="8"/><rect x="336" y="216" width="8" height="8"/>
+    <rect x="352" y="216" width="8" height="8"/><rect x="368" y="216" width="8" height="8"/>
+    <rect x="384" y="216" width="8" height="8"/><rect x="400" y="216" width="8" height="8"/>
+    <rect x="416" y="216" width="8" height="8"/><rect x="432" y="216" width="8" height="8"/>
+    <rect x="448" y="216" width="8" height="8"/><rect x="464" y="216" width="8" height="8"/>
+  </g>
+  <line x1="320" y1="192" x2="476" y2="192" stroke="rgba(0,0,0,0.50)" stroke-width="1.2"/>
+  <line x1="320" y1="224" x2="476" y2="224" stroke="rgba(0,0,0,0.50)" stroke-width="1.2"/>
+
+  <!-- RACING NUMBER CIRCLE (no text) -->
+  <ellipse cx="445" cy="212" rx="30" ry="26" fill="rgba(0,0,0,0.62)"/>
+  <ellipse cx="445" cy="212" rx="30" ry="26" fill="none" stroke="#FFD600" stroke-width="1.5" opacity="0.70"/>
+  <!-- Number "88" replaced by two yellow ovals -->
+  <ellipse cx="438" cy="212" rx="7" ry="10" fill="none" stroke="#FFD600" stroke-width="2.5"/>
+  <ellipse cx="452" cy="212" rx="7" ry="10" fill="none" stroke="#FFD600" stroke-width="2.5"/>
+
+  <!-- REAR WING -->
+  <rect x="573" y="55" width="8" height="44" fill="#1C1C1C"/>
+  <rect x="636" y="55" width="8" height="44" fill="#1C1C1C"/>
+  <rect x="558" y="48" width="96" height="20" rx="3" fill="#1C1C1C"/>
+  <rect x="558" y="48" width="96" height="4"  rx="2" fill="rgba(255,255,255,0.28)"/>
+  <rect x="562" y="65" width="90" height="6"  rx="1" fill="#0A0A0A"/>
+  <rect x="556" y="48" width="6" height="50" rx="2" fill="#151515"/>
+  <rect x="652" y="48" width="6" height="50" rx="2" fill="#151515"/>
+
+  <!-- TAXI ROOF SIGN -->
+  <ellipse cx="390" cy="74" rx="76" ry="28" fill="#FFD600" opacity="0.22"/>
+  <rect x="332" y="56" width="116" height="30" rx="3" fill="#0A0A0A"/>
+  <rect x="332" y="56" width="116" height="30" rx="3" fill="none"
+        stroke="#FFD600" stroke-width="1.8" opacity="0.65"/>
+  <!-- Checker corner decoration -->
+  <rect x="332" y="56" width="8"  height="8"  fill="#FFD600"/>
+  <rect x="340" y="64" width="8"  height="8"  fill="#FFD600"/>
+  <rect x="340" y="56" width="8"  height="8"  fill="#000" opacity="0.7"/>
+  <rect x="332" y="64" width="8"  height="8"  fill="#000" opacity="0.7"/>
+  <rect x="440" y="56" width="8"  height="8"  fill="#FFD600"/>
+  <rect x="440" y="64" width="8"  height="8"  fill="#000" opacity="0.7"/>
+  <rect x="432" y="56" width="8"  height="8"  fill="#000" opacity="0.7"/>
+  <rect x="432" y="64" width="8"  height="8"  fill="#FFD600"/>
+  <!-- TAXI label — horizontal yellow bar instead of text -->
+  <rect x="352" y="64" width="64" height="10" rx="2" fill="#FFD600" opacity="0.88"/>
+  <rect x="356" y="67" width="56" height="4"  rx="1" fill="#CC9900" opacity="0.60"/>
+
+  <!-- HOOD AIR VENT LINES -->
+  <line x1="140" y1="168" x2="148" y2="178" stroke="rgba(0,0,0,0.30)" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="155" y1="167" x2="163" y2="177" stroke="rgba(0,0,0,0.30)" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="170" y1="165" x2="178" y2="175" stroke="rgba(0,0,0,0.30)" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- EXHAUST PIPES -->
+  <rect x="750" y="250" width="32" height="9" rx="3" fill="#252525"/>
+  <rect x="752" y="255" width="28" height="4" fill="#1A1A1A"/>
+  <path d="M 782,252 C 800,247 818,252 826,256 C 814,262 798,262 782,257 Z"
+        fill="#FF7700" opacity="0.82"/>
+  <path d="M 782,252 C 802,244 826,247 838,254 C 822,262 800,264 782,257 Z"
+        fill="#FFEE00" opacity="0.48"/>
+
+  <!-- FRONT WHEEL -->
+  <circle cx="210" cy="222" r="68" fill="#0C0E18"/>
+  <circle cx="210" cy="222" r="68" fill="none" stroke="#242424" stroke-width="26"/>
+  <circle cx="210" cy="222" r="45" fill="url(#rimG)"/>
+  <line x1="210" y1="222" x2="210" y2="178" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="210" y1="222" x2="252" y2="235" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="210" y1="222" x2="237" y2="266" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="210" y1="222" x2="183" y2="266" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="210" y1="222" x2="168" y2="235" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="210" cy="222" r="26" fill="#1E2A34"/>
+  <ellipse cx="232" cy="213" rx="21" ry="18" fill="#BB1122" opacity="0.92"/>
+  <ellipse cx="232" cy="213" rx="14" ry="12" fill="#881122" opacity="0.80"/>
+  <circle cx="210" cy="222" r="13" fill="#CCDDEE"/>
+  <circle cx="210" cy="222" r="7"  fill="#8899AA"/>
+  <circle cx="210" cy="222" r="52" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+
+  <!-- REAR WHEEL -->
+  <circle cx="584" cy="222" r="68" fill="#0C0E18"/>
+  <circle cx="584" cy="222" r="68" fill="none" stroke="#242424" stroke-width="26"/>
+  <circle cx="584" cy="222" r="45" fill="url(#rimG)"/>
+  <line x1="584" y1="222" x2="584" y2="178" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="626" y2="235" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="611" y2="266" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="557" y2="266" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <line x1="584" y1="222" x2="542" y2="235" stroke="#8ABBCC" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="584" cy="222" r="26" fill="#1E2A34"/>
+  <ellipse cx="606" cy="213" rx="21" ry="18" fill="#BB1122" opacity="0.92"/>
+  <ellipse cx="606" cy="213" rx="14" ry="12" fill="#881122" opacity="0.80"/>
+  <circle cx="584" cy="222" r="13" fill="#CCDDEE"/>
+  <circle cx="584" cy="222" r="7"  fill="#8899AA"/>
+  <circle cx="584" cy="222" r="52" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /d d:\\\\FlutterProjects\\\\taxirush)",
+      "Bash(dart analyze *)",
+      "Bash(python tools/generate_bgm.py)",
+      "Bash(flutter doctor *)",
+      "Bash(flutter test *)"
+    ]
+  }
+}
